@@ -1,0 +1,44 @@
+<!-- portfolio.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header><h1>My Projects</h1>
+  <main class="projects">
+    <section class="projects">
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="portfolio.html">Projects</a>
+        <a href="contact.html">Contact</a>
+        <a href="survey.html">Survey</a>
+        <button onclick="toggleMode()">Toggle Theme</button>
+    </nav>
+</header>
+     <h2>My Projects</h2>
+        <div class="project">
+          <h3>Project 1</h3>
+          <button onclick="toggleDetails('details1')">Show/Hide Details</button>
+          <p id="details1" class="project-details" style="display:none;">
+            This project is about building a responsive portfolio using HTML, CSS, and JavaScript.
+          </p>
+        </div>
+
+        <div class="project">
+          <h3>Project 2</h3>
+          <button onclick="toggleDetails('details2')">Show/Hide Details</button>
+          <p id="details2" class="project-details" style="display:none;">
+            This project is a mini quiz game powered by JavaScript and JSON data.
+          </p>
+        </div>
+      </section>
+  </main>
+  <footer><p>&copy; 2025 [Samson]</p></footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

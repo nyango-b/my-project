@@ -1,0 +1,43 @@
+<!-- survey.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header> 
+    <h1>Survey</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="portfolio.html">Projects</a>
+        <a href="contact.html">Contact</a>
+        <a href="survey.html">Survey</a>
+        <button onclick="toggleMode()">Toggle Theme</button>
+    </nav>
+</header>
+  <main>
+    <form>
+      <p>How did you find this site?</p>
+      <input type="radio" name="source" value="search"> Search Engine<br>
+      <input type="radio" name="source" value="social"> Social Media<br>
+      <input type="radio" name="source" value="friend"> Friend<br>
+
+      <p>Select your interests:</p>
+      <input type="checkbox" name="interests" value="html"> HTML<br>
+      <input type="checkbox" name="interests" value="css"> CSS<br>
+      <input type="checkbox" name="interests" value="js"> JavaScript<br>
+
+      <label for="comments">Comments:</label>
+      <textarea id="comments"></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+  <footer><p>&copy; 2025 [Samson]</p></footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

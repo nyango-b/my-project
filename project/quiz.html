@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<header><h1>Quiz Time!</h1></header>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="portfolio.html">Projects</a>
+  <a href="contact.html">Contact</a>
+  <a href="survey.html">Survey</a>
+  <a href="quiz.html">Quiz</a>
+  <button onclick="toggleMode()">Toggle Theme</button>
+</nav>
+
+<main>
+  <form id="quiz-form">
+    <div class="quiz-question"><p>1. What is the capital of France?</p>
+      <label><input type="radio" name="q1" value="Paris" /> Paris</label>
+      <label><input type="radio" name="q1" value="Rome" /> Rome</label>
+    </div>
+    <div class="quiz-question"><p>2. Which language is used for web apps?</p>
+      <label><input type="radio" name="q2" value="JavaScript" /> JavaScript</label>
+      <label><input type="radio" name="q2" value="Python" /> Python</label>
+    </div>
+    <div class="quiz-question"><p>3. Which one is a frontend framework?</p>
+      <label><input type="radio" name="q3" value="React" /> React</label>
+      <label><input type="radio" name="q3" value="Django" /> Django</label>
+    </div>
+    <div class="quiz-question"><p>4. What is the largest planet in our solar system?</p>
+      <label><input type="radio" name="q4" value="Jupiter" /> Jupiter</label>
+      <label><input type="radio" name="q4" value="Mars" /> Mars</label>
+    </div>
+    <div class="quiz-question"><p>5. HTML stands for?</p>
+      <label><input type="radio" name="q5" value="HyperText Markup Language" /> HyperText Markup Language</label>
+      <label><input type="radio" name="q5" value="HighText Markdown Language" /> HighText Markdown Language</label>
+    </div>
+    <div class="quiz-question"><p>6. CSS is mainly used for?</p>
+      <label><input type="radio" name="q6" value="Styling websites" /> Styling websites</label>
+      <label><input type="radio" name="q6" value="Writing database queries" /> Writing database queries</label>
+    </div>
+    <div class="quiz-question"><p>7. Shortcut for copying on a Windows computer?</p>
+      <label><input type="radio" name="q7" value="Ctrl + C" /> Ctrl + C</label>
+      <label><input type="radio" name="q7" value="Ctrl + X" /> Ctrl + X</label>
+    </div>
+    <div class="quiz-question"><p>8. Which device processes data?</p>
+      <label><input type="radio" name="q8" value="CPU" /> CPU</label>
+      <label><input type="radio" name="q8" value="Monitor" /> Monitor</label>
+    </div>
+    <div class="quiz-question"><p>9. A logic gate with two inputs and one output is?</p>
+      <label><input type="radio" name="q9" value="AND gate" /> AND gate</label>
+      <label><input type="radio" name="q9" value="Signal booster" /> Signal booster</label>
+    </div>
+    <div class="quiz-question"><p>10. Which programming language starts with “P”?</p>
+      <label><input type="radio" name="q10" value="Python" /> Python</label>
+      <label><input type="radio" name="q10" value="HTML" /> HTML</label>
+    </div>
+    <button type="submit">Submit Quiz</button>
+  </form>
+  <div id="quiz-result"></div>
+</main>
+
+<script src="js/script.js"></script>
+</body>
+</html>
